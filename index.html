@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>r/Piracy Megathread</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0e0f;
+      --bg2: #161617;
+      --bg3: #1e1e20;
+      --border: rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.14);
+      --text: #e8e8e8;
+      --text2: #909090;
+      --text3: #555;
+      --accent: #e85d2a;
+      --accent2: #ff7a47;
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'IBM Plex Sans', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .brand-name {
+      font-family: var(--mono);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .brand-tag {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      background: rgba(232,93,42,0.12);
+      padding: 2px 8px;
+      border-radius: 3px;
+      border: 1px solid rgba(232,93,42,0.25);
+    }
+
+    .brand-sub {
+      font-size: 0.85rem;
+      color: var(--text3);
+    }
+
+    .brand-sub a {
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .brand-sub a:hover { color: var(--accent2); }
+
+    /* ── Toolbar ── */
+    .toolbar {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1.25rem 0;
+      flex-wrap: wrap;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text3);
+      pointer-events: none;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      background: var(--bg2);
+      border: 1px solid var(--border2);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.55rem 1rem 0.55rem 2.5rem;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.15s;
+      -webkit-appearance: none;
+    }
+
+    input[type="search"]:focus { border-color: var(--accent); }
+    input[type="search"]::placeholder { color: var(--text3); }
+
+    .status-line {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--text3);
+      white-space: nowrap;
+    }
+
+    /* ── Filters ── */
+    .filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .filter-btn {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border2);
+      background: transparent;
+      color: var(--text2);
+      cursor: pointer;
+      transition: all 0.12s;
+      letter-spacing: 0.02em;
+    }
+
+    .filter-btn:hover { border-color: var(--accent); color: var(--accent2); }
+    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── Main grid ── */
+    main { padding: 1.5rem 0 4rem; }
+
+    .section { margin-bottom: 2rem; }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--text3);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-count {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--text3);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card {
+      background: var(--bg2);
+      padding: 14px 16px;
+      transition: background 0.1s;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .card:hover { background: var(--bg3); }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .card-name {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .card-name a {
+      color: var(--accent2);
+      text-decoration: none;
+      transition: color 0.1s;
+    }
+
+    .card-name a:hover { color: #fff; text-decoration: underline; }
+
+    .card-desc {
+      font-size: 0.8rem;
+      color: var(--text2);
+      line-height: 1.5;
+    }
+
+    /* badge colors */
+    .badge {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      padding: 2px 7px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .b-privacy  { background: rgba(59,130,246,0.15); color: #7eb8f7; border: 1px solid rgba(59,130,246,0.2); }
+    .b-torrent  { background: rgba(34,197,94,0.12);  color: #6ee7a0; border: 1px solid rgba(34,197,94,0.2); }
+    .b-ebooks   { background: rgba(251,191,36,0.12); color: #fcd569; border: 1px solid rgba(251,191,36,0.2); }
+    .b-courses  { background: rgba(167,139,250,0.12);color: #c4adfc; border: 1px solid rgba(167,139,250,0.2);}
+    .b-games    { background: rgba(232,93,42,0.12);  color: #f5956a; border: 1px solid rgba(232,93,42,0.2); }
+    .b-movies   { background: rgba(236,72,153,0.12); color: #f490c6; border: 1px solid rgba(236,72,153,0.2);}
+    .b-anime    { background: rgba(236,72,153,0.12); color: #f490c6; border: 1px solid rgba(236,72,153,0.2);}
+    .b-music    { background: rgba(20,184,166,0.12); color: #5ee7d8; border: 1px solid rgba(20,184,166,0.2); }
+    .b-android  { background: rgba(160,160,160,0.1); color: #aaa;    border: 1px solid rgba(160,160,160,0.15);}
+    .b-tools    { background: rgba(239,68,68,0.12);  color: #fca5a5; border: 1px solid rgba(239,68,68,0.2); }
+    .b-ddl      { background: rgba(251,191,36,0.1);  color: #d4a339; border: 1px solid rgba(251,191,36,0.15);}
+    .b-misc     { background: rgba(160,160,160,0.1); color: #aaa;    border: 1px solid rgba(160,160,160,0.15);}
+
+    /* ── States ── */
+    .loading, .empty, .error {
+      padding: 4rem 0;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+    }
+
+    .loading { color: var(--text3); }
+    .empty   { color: var(--text3); }
+    .error   { color: #f87171; }
+
+    .loading::after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-left: 10px;
+      animation: pulse 1s infinite;
+      vertical-align: middle;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.25rem 0;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--text3);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    footer a { color: var(--text3); text-decoration: none; }
+    footer a:hover { color: var(--accent2); }
+
+    @media (max-width: 600px) {
+      .brand { flex-wrap: wrap; }
+      .toolbar { flex-direction: column; align-items: stretch; }
+      .status-line { text-align: right; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand">
+      <span class="brand-name">r/Piracy Megathread</span>
+      <span class="brand-tag">explorer</span>
+    </div>
+    <p class="brand-sub">
+      Searchable index of the
+      <a href="https://www.reddit.com/r/Piracy/wiki/megathread/" target="_blank" rel="noopener">
+        r/Piracy wiki megathread
+      </a>
+      — auto-updated weekly via GitHub Actions
+    </p>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="toolbar">
+    <div class="search-wrap">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 6.5C10 8.43 8.43 10 6.5 10C4.57 10 3 8.43 3 6.5C3 4.57 4.57 3 6.5 3C8.43 3 10 4.57 10 6.5ZM9.39 10.1C8.6 10.66 7.59 11 6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 7.59 10.66 8.6 10.1 9.39L13.35 12.65L12.65 13.35L9.39 10.1Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/>
+      </svg>
+      <input type="search" id="search" placeholder="Search sites, tools, descriptions…" autocomplete="off" spellcheck="false" />
+    </div>
+    <div class="status-line" id="status">loading…</div>
+  </div>
+
+  <div class="filters" id="filters"></div>
+
+  <main id="main">
+    <div class="loading">fetching data</div>
+  </main>
+
+</div>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;width:100%">
+    <span>data from <a href="https://www.reddit.com/r/Piracy/wiki/megathread/" target="_blank">r/piracy wiki</a> · updated <span id="updated-at">—</span></span>
+    <span>auto-synced via github actions · <a href="https://github.com" target="_blank">view source</a></span>
+  </div>
+</footer>
+
+<script>
+let ALL_DATA = [];
+let activeFilter = 'All';
+let query = '';
+
+async function loadData() {
+  try {
+    const res = await fetch('data.json?v=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    ALL_DATA = json.sections || [];
+
+    const updatedEl = document.getElementById('updated-at');
+    if (json.updated_at) {
+      const d = new Date(json.updated_at);
+      updatedEl.textContent = d.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+    }
+
+    buildFilters();
+    render();
+  } catch (e) {
+    document.getElementById('main').innerHTML = `<div class="error">failed to load data.json — ${e.message}</div>`;
+    document.getElementById('status').textContent = 'error';
+  }
+}
+
+function buildFilters() {
+  const el = document.getElementById('filters');
+  const total = ALL_DATA.reduce((a, s) => a + s.items.length, 0);
+  const cats = ['All', ...ALL_DATA.map(s => s.cat)];
+
+  el.innerHTML = '';
+  cats.forEach(cat => {
+    const count = cat === 'All' ? total : (ALL_DATA.find(s => s.cat === cat)?.items.length || 0);
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (cat === activeFilter ? ' active' : '');
+    btn.textContent = cat === 'All' ? `all (${count})` : cat.toLowerCase();
+    btn.dataset.cat = cat;
+    btn.addEventListener('click', () => {
+      activeFilter = cat;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+      render();
+    });
+    el.appendChild(btn);
+  });
+}
+
+function highlight(text, q) {
+  if (!q) return text;
+  const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark style="background:rgba(232,93,42,0.3);color:inherit;border-radius:2px">$1</mark>');
+}
+
+function render() {
+  const q = query.toLowerCase().trim();
+  let totalVisible = 0;
+  let html = '';
+
+  ALL_DATA.forEach(section => {
+    if (activeFilter !== 'All' && section.cat !== activeFilter) return;
+    const items = section.items.filter(item =>
+      !q || item.name.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q) || (item.url || '').toLowerCase().includes(q)
+    );
+    if (!items.length) return;
+    totalVisible += items.length;
+
+    const badgeClass = 'b-' + (section.badge || 'misc');
+
+    html += `<div class="section">
+      <div class="section-head">
+        <span class="section-title">${section.cat}</span>
+        <span class="section-count">${items.length}</span>
+      </div>
+      <div class="cards">
+        ${items.map(item => `
+          <div class="card">
+            <div class="card-top">
+              <div class="card-name">
+                ${item.url
+                  ? `<a href="${item.url}" target="_blank" rel="noopener">${highlight(item.name, query)}</a>`
+                  : highlight(item.name, query)
+                }
+              </div>
+              <span class="badge ${badgeClass}">${section.badge || 'misc'}</span>
+            </div>
+            ${item.desc ? `<div class="card-desc">${highlight(item.desc, query)}</div>` : ''}
+          </div>
+        `).join('')}
+      </div>
+    </div>`;
+  });
+
+  document.getElementById('main').innerHTML = html || `<div class="empty">no results for "${query}"</div>`;
+
+  const total = ALL_DATA.reduce((a, s) => a + s.items.length, 0);
+  document.getElementById('status').textContent = q
+    ? `${totalVisible} of ${total} resources`
+    : `${total} resources`;
+}
+
+document.getElementById('search').addEventListener('input', e => {
+  query = e.target.value;
+  render();
+});
+
+loadData();
+</script>
+</body>
+</html>
