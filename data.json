@@ -1,174 +1,717 @@
 {
-  "updated_at": "2025-01-01T00:00:00Z",
+  "updated_at": "2026-05-02T07:47:35Z",
   "source": "https://www.reddit.com/r/Piracy/wiki/megathread",
   "sections": [
     {
       "cat": "Privacy & Security",
       "badge": "privacy",
       "items": [
-        {"name": "uBlock Origin", "url": "https://github.com/gorhill/uBlock#installation", "desc": "Best adblocker. Blocks ads, pop-ups, and trackers. Essential for piracy sites."},
-        {"name": "uBlock Origin Extra", "url": "https://chrome.google.com/webstore/detail/ublock-origin-extra/pgdnlhfefecpicbbihgmbmffkjpaplco", "desc": "Companion extension for sites that block ad-block extensions."},
-        {"name": "Tampermonkey", "url": "https://tampermonkey.net", "desc": "Install userscripts to automate and enhance browsing."},
-        {"name": "AdsBypasser", "url": "https://adsbypasser.github.io/", "desc": "Userscript to skip countdown ads and prevent ad pop-up windows."},
-        {"name": "AntiAdware", "url": "https://github.com/HandyUserscripts/AntiAdware#readme", "desc": "Userscript to avoid bundled unwanted software during downloads."},
-        {"name": "ThatOnePrivacySite VPN Chart", "url": "https://thatoneprivacysite.net/vpn-section/", "desc": "Detailed comparison chart for VPN services."},
-        {"name": "TorrentFreak VPN Review", "url": "https://torrentfreak.com/vpn-services-keep-anonymous-2018/", "desc": "Which VPN services keep you anonymous? Annual review."},
-        {"name": "EFF VPN Guide", "url": "https://ssd.eff.org/en/module/choosing-vpn-thats-right-you", "desc": "EFF's guide on what a VPN is and how to choose one."}
+        {
+          "name": "ThatOnePrivacySite VPN Chart",
+          "url": "https://thatoneprivacysite.net/vpn-section/",
+          "desc": ""
+        },
+        {
+          "name": "Choosing the best VPN for you",
+          "url": "https://www.reddit.com/r/VPN/comments/4iho8e/that_one_privacy_guys_guide_to_choosing_the_best/?st=iu9u47u7&sh=459a76f2",
+          "desc": ""
+        },
+        {
+          "name": "**Which VPN Services Keep You Anonymous in 2018?**",
+          "url": "https://torrentfreak.com/vpn-services-keep-anonymous-2018/",
+          "desc": ""
+        },
+        {
+          "name": "Which VPN Services Keep You Anonymous in 2017?",
+          "url": "https://torrentfreak.com/vpn-services-anonymous-review-2017-170304/",
+          "desc": ""
+        },
+        {
+          "name": "TorrentFreak 2016 VPN interview",
+          "url": "https://torrentfreak.com/vpn-anonymous-review-160220/",
+          "desc": ""
+        },
+        {
+          "name": "EEF Overview on what a VPN is and how to choose one",
+          "url": "https://ssd.eff.org/en/module/choosing-vpn-thats-right-you",
+          "desc": ""
+        },
+        {
+          "name": "https://www.reddit.com/r/VPN/wiki/index",
+          "url": "https://www.reddit.com/r/VPN/wiki/index",
+          "desc": ""
+        },
+        {
+          "name": "https://www.reddit.com/r/Privacy/wiki/index",
+          "url": "https://www.reddit.com/r/Privacy/wiki/index",
+          "desc": ""
+        },
+        {
+          "name": "An alternative to purchasing your VPN is hosting your own",
+          "url": "https://www.reddit.com/r/VPN/search?q=vps&restrict_sr=on",
+          "desc": ". You will have much more flexibility and you can have your VPS hoster outside your country's copyright law jurisdiction."
+        }
+      ]
+    },
+    {
+      "cat": "Adblockers & useful extensions",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "uBlock origin",
+          "url": "https://github.com/gorhill/uBlock#installation",
+          "desc": "for blocking most ads and pop-ups."
+        },
+        {
+          "name": "uBlock-safari",
+          "url": "https://github.com/el1t/uBlock-Safari",
+          "desc": "port for Safari or MacOS users."
+        },
+        {
+          "name": "uBlock origin extra",
+          "url": "https://chrome.google.com/webstore/detail/ublock-origin-extra/pgdnlhfefecpicbbihgmbmffkjpaplco",
+          "desc": "companion extension for websites that block ad-block extensions (even with Anti-Adblock Killer enabled in uBlock origin)."
+        },
+        {
+          "name": "Tampermonkey",
+          "url": "https://tampermonkey.net",
+          "desc": "for installing userscripts."
+        }
+      ]
+    },
+    {
+      "cat": "Useful userscripts",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "AdsBypasser",
+          "url": "https://adsbypasser.github.io/",
+          "desc": "to skip countdown ads or continue pages and prevent ad pop-up windows."
+        },
+        {
+          "name": "AntiAdware",
+          "url": "https://github.com/HandyUserscripts/AntiAdware#readme",
+          "desc": "to avoid installing unwanted applications downloading with legitimate software (e.g. McAfee with Adobe Flash)"
+        },
+        {
+          "name": "Get DLC Info From SteamDB",
+          "url": "https://cs.rin.ru/forum/viewtopic.php?f=10&t=71837",
+          "desc": "automatically creates a DLC list for tools such as CreamAPI, GreenLuma and SmartSteamEmu."
+        },
+        {
+          "name": "uBlock Protector (Chromium)",
+          "url": "https://jspenguin2017.github.io/uBlockProtector/",
+          "desc": "similar to Adblock Protector 2. (For chromium broswers)"
+        }
       ]
     },
     {
       "cat": "Torrent Clients",
       "badge": "torrent",
       "items": [
-        {"name": "qBittorrent", "url": "https://www.qbittorrent.org/download.php", "desc": "Free open-source client with no ads and built-in search across public trackers."},
-        {"name": "Deluge", "url": "http://dev.deluge-torrent.org/", "desc": "Lightweight client similar to qBittorrent with a different UI."},
-        {"name": "Tixati", "url": "https://www.tixati.com/", "desc": "Extremely customizable client — rearrange menus, change color schemes completely."},
-        {"name": "Transmission", "url": "https://transmissionbt.com/", "desc": "Popular macOS and Unix torrent client known for simplicity."}
+        {
+          "name": "Deluge",
+          "url": "http://dev.deluge-torrent.org/",
+          "desc": "similar to qbittorrent with a different UI some may find clunky."
+        },
+        {
+          "name": "Qbittorrent",
+          "url": "https://www.qbittorrent.org/download.php",
+          "desc": "free open-sourced client. No ads and has a built-in search feature that searches popular public trackers. Consistently updated."
+        },
+        {
+          "name": "Tixati",
+          "url": "https://www.tixati.com/",
+          "desc": "extremely customizable. All menus can be rearranged and color scheme can be changed completely. Many private trackers however may not permit this client to be used."
+        },
+        {
+          "name": "Transmission",
+          "url": "https://transmissionbt.com/",
+          "desc": "popular macOS and unix torrent client."
+        }
       ]
     },
     {
       "cat": "Torrent Indexers",
       "badge": "torrent",
       "items": [
-        {"name": "1337x", "url": "https://1337x.to/", "desc": "Popular general torrent indexer with a clean interface."},
-        {"name": "The Pirate Bay", "url": "https://thepiratebay.org/", "desc": "The most iconic torrent site. Wide variety of content."},
-        {"name": "RARBG", "url": "https://rarbg.to/torrents.php", "desc": "High-quality releases, popular for movies and TV."},
-        {"name": "Rutracker", "url": "https://rutracker.org/forum/index.php", "desc": "Russian tracker — excellent for music, software, and hard-to-find content."},
-        {"name": "snowfl", "url": "https://snowfl.com/", "desc": "Real-time torrent aggregator — searches multiple trackers at once."},
-        {"name": "torrentz2", "url": "https://torrentz2.eu/", "desc": "Meta-search engine for torrents."},
-        {"name": "LimeTorrents", "url": "https://www.limetorrents.cc/", "desc": "General-purpose torrent indexer."},
-        {"name": "Zooqle", "url": "https://zooqle.com/", "desc": "Torrent indexer with a focus on movies and TV shows."},
-        {"name": "nnm-club", "url": "https://nnm-club.me/", "desc": "Russian tracker and forum with diverse content."},
-        {"name": "rutor", "url": "http://rutor.info/", "desc": "Russian torrent indexer."}
+        {
+          "name": "1337x.to",
+          "url": "https://1337x.to/",
+          "desc": ""
+        },
+        {
+          "name": "limetorrents.cc",
+          "url": "https://www.limetorrents.cc/",
+          "desc": ""
+        },
+        {
+          "name": "nnm-club.me",
+          "url": "https://nnm-club.me/",
+          "desc": "Russian tracker and forum."
+        },
+        {
+          "name": "RARBG.to",
+          "url": "https://rarbg.to/torrents.php",
+          "desc": ""
+        },
+        {
+          "name": "rutor.info",
+          "url": "http://rutor.info/",
+          "desc": ""
+        },
+        {
+          "name": "rutracker.org",
+          "url": "https://rutracker.org/forum/index.php",
+          "desc": "Russian tracker. Great for music."
+        },
+        {
+          "name": "snowfl.com",
+          "url": "https://snowfl.com/",
+          "desc": ""
+        },
+        {
+          "name": "thepiratebay.org",
+          "url": "https://thepiratebay.org/",
+          "desc": ""
+        },
+        {
+          "name": "toorgle.net",
+          "url": "http://www.toorgle.com/",
+          "desc": ""
+        },
+        {
+          "name": "torrentz2.eu",
+          "url": "https://torrentz2.eu/",
+          "desc": ""
+        },
+        {
+          "name": "zooqle.com",
+          "url": "https://zooqle.com/",
+          "desc": ""
+        }
       ]
     },
     {
-      "cat": "Ebooks & Textbooks",
-      "badge": "ebooks",
+      "cat": "Popular sites for books",
+      "badge": "misc",
       "items": [
-        {"name": "Library Genesis", "url": "http://libgen.io/", "desc": "Most popular ebook site. Huge library including textbooks and research papers."},
-        {"name": "Z-Library (b-ok)", "url": "https://b-ok.org/", "desc": "Formerly Bookzz. Massive ebook collection."},
-        {"name": "Sci-Hub", "url": "https://sci-hub.tw/", "desc": "Largest collection of research papers and academic articles. Free access."},
-        {"name": "Mobilism (ebooks)", "url": "https://forum.mobilism.org/viewforum.php?f=106", "desc": "Large ebook forum with a request subforum."},
-        {"name": "AudiobookBay", "url": "http://audiobookbay.pl/", "desc": "#1 site for audiobooks. Shares content with MyAnonamouse."},
-        {"name": "booksc", "url": "https://booksc.org", "desc": "Scientific articles and books."},
-        {"name": "Freebookspot", "url": "http://www.freebookspot.es/", "desc": "Free ebook downloads across various genres."},
-        {"name": "EbookEE", "url": "https://ebookee.org/", "desc": "Ebook search engine and download site."},
-        {"name": "MyAnonamouse (MAM)", "url": "https://www.myanonamouse.net/", "desc": "Private tracker for ebooks and audiobooks."},
-        {"name": "Bibliotik", "url": "https://bibliotik.me/", "desc": "Private tracker for ebooks and audiobooks."},
-        {"name": "PDF-Giant", "url": "http://pdf-giant.com/", "desc": "Magazine PDFs."},
-        {"name": "MagazineLib", "url": "https://magazinelib.com/", "desc": "Download magazine issues in PDF format."},
-        {"name": "GetComics", "url": "http://getcomics.info/", "desc": "DC, Marvel, and indie comics downloads."},
-        {"name": "ReadComicOnline", "url": "https://readcomiconline.to/", "desc": "Read comics online for free."},
-        {"name": "Ebooks CSE (r/Piracy)", "url": "https://cse.google.com/cse?cx=003753031376654422446:szjag5vbefo", "desc": "Custom Google search engine that searches dozens of ebook sites simultaneously."},
-        {"name": "Amosqu's CSE", "url": "https://cse.google.com/cse?cx=011394183039475424659:5bfyqg89ers", "desc": "Another custom search engine for finding textbooks across many sites."}
+        {
+          "name": "Library Genesis",
+          "url": "http://libgen.io/",
+          "desc": "most popular ebook site and provides several mirrors to ebooks including torrents."
+        },
+        {
+          "name": "mirror - gen.lib.rus.ec",
+          "url": "http://gen.lib.rus.ec/",
+          "desc": ""
+        },
+        {
+          "name": "b-ok.org",
+          "url": "https://b-ok.org/",
+          "desc": "formerly known as Bookzz."
+        },
+        {
+          "name": "mobilism.org",
+          "url": "https://forum.mobilism.org/viewforum.php?f=106",
+          "desc": "large ebook forum that contains a request subforum"
+        },
+        {
+          "name": "sci-hub.tw",
+          "url": "https://sci-hub.tw/",
+          "desc": "largest collection of research papers."
+        },
+        {
+          "name": "booksc.org",
+          "url": "https://booksc.org",
+          "desc": "contains scientific articles."
+        },
+        {
+          "name": "freebookspot.es",
+          "url": "http://www.freebookspot.es/",
+          "desc": ""
+        },
+        {
+          "name": "ebookee.org",
+          "url": "https://ebookee.org/",
+          "desc": ""
+        },
+        {
+          "name": "audiobookbay.pl",
+          "url": "http://audiobookbay.pl/",
+          "desc": "#1 site for audiobooks. Shares a lot of content with MAM."
+        },
+        {
+          "name": "Hampshire College",
+          "url": "https://www.hampshire.edu/library/links-to-free-ebook-resources",
+          "desc": "several links to free eBook resources."
+        }
+      ]
+    },
+    {
+      "cat": "Custom Search Engines",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "**u/Amosqu's CSE**",
+          "url": "https://cse.google.com/cse?cx=011394183039475424659:5bfyqg89ers",
+          "desc": "scours in many sites listed above. See his thread here."
+        },
+        {
+          "name": "**r/Piracy updated ebooks CSE**",
+          "url": "https://cse.google.com/cse?cx=003753031376654422446:szjag5vbefo",
+          "desc": "removed all dead links and added new websites. See here for the contents of the sites it scrapes: https://pastebin.com/aapQMv7t"
+        }
+      ]
+    },
+    {
+      "cat": "Private trackers",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "MyAnonamouse a.k.a. MAM",
+          "url": "https://www.myanonamouse.net/",
+          "desc": "private tracker for ebooks/audiobooks"
+        },
+        {
+          "name": "bibliotik",
+          "url": "https://bibliotik.me/",
+          "desc": "private tracker for ebooks/audiobooks"
+        }
+      ]
+    },
+    {
+      "cat": "Magazines",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "pdf-giant.com",
+          "url": "http://pdf-giant.com/",
+          "desc": ""
+        },
+        {
+          "name": "magazinelib.com",
+          "url": "https://magazinelib.com/",
+          "desc": ""
+        },
+        {
+          "name": "magazinesdownload.org",
+          "url": "https://magazinesdownload.org/",
+          "desc": "magazines hosted on free, fast, file hosting sites"
+        },
+        {
+          "name": "ebook3000.com",
+          "url": "http://ebook3000.com/",
+          "desc": "be sure to use an adblocker"
+        }
+      ]
+    },
+    {
+      "cat": "Comics",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "getcomics.info",
+          "url": "http://getcomics.info/",
+          "desc": ""
+        },
+        {
+          "name": "comicextra.com",
+          "url": "https://www.comicextra.com/",
+          "desc": ""
+        },
+        {
+          "name": "readcomiconline.to",
+          "url": "https://readcomiconline.to/",
+          "desc": ""
+        },
+        {
+          "name": "readcomicbooksonline.net",
+          "url": "https://readcomicbooksonline.net/",
+          "desc": ""
+        },
+        {
+          "name": "https://www.reddit.com/r/trackers/comments/hrgmv/tracker...",
+          "url": "https://www.reddit.com/r/trackers/comments/hrgmv/tracker_with_pdfsebooks_of_college_textbooks/c1xrq44/",
+          "desc": ""
+        },
+        {
+          "name": "https://www.reddit.com/r/Piracy/comments/2oftbu/guide..",
+          "url": "https://www.reddit.com/r/Piracy/comments/2oftbu/guide_the_idiot_proof_guide_to_downloading_ebooks/",
+          "desc": ""
+        },
+        {
+          "name": "https://www.mobileread.com/forums/forumdisplay.php?f=166",
+          "url": "https://www.mobileread.com/forums/forumdisplay.php?f=166",
+          "desc": ""
+        }
       ]
     },
     {
       "cat": "Courses & Tutorials",
       "badge": "courses",
       "items": [
-        {"name": "freetutorials.us", "url": "https://www.freetutorials.us/", "desc": "Udemy, Lynda, and Pluralsight courses available via torrents."},
-        {"name": "gfxdomain", "url": "http://forum.gfxdomain.net/forums/others-tutorials.42/", "desc": "Computer graphics and design tutorials via file hosts and torrents."},
-        {"name": "git.ir", "url": "https://git.ir/", "desc": "Courses from Udemy, TutsPlus, Lynda and more via direct download."}
-      ]
-    },
-    {
-      "cat": "Games",
-      "badge": "games",
-      "items": [
-        {"name": "FitGirl Repacks", "url": "http://fitgirl-repacks.site/", "desc": "Compressed game repacks. Smaller downloads, longer install times. Highly trusted."},
-        {"name": "CS.RIN.RU (Steam Underground)", "url": "https://cs.rin.ru/forum/viewforum.php?f=10", "desc": "Dedicated game piracy forum. Scene releases and cracked Steam games."},
-        {"name": "GamesTorrents", "url": "https://www.gamestorrents.io/", "desc": "Torrent site focused on games."},
-        {"name": "The Eye (ROMs)", "url": "http://the-eye.eu/public/rom/", "desc": "Large collection of multi-platform console ROMs."},
-        {"name": "ROMulation", "url": "https://www.romulation.net/", "desc": "ROM downloads for various consoles."},
-        {"name": "EmuParadise", "url": "https://www.emuparadise.me", "desc": "NDS, PSP, PSX, NES, SNES, MAME, Wii ROMs and more."},
-        {"name": "Vimm's Lair", "url": "https://vimm.net/?p=vault", "desc": "Large, well-maintained collection of ROMs across many systems."},
-        {"name": "emulation.gametechwiki", "url": "http://emulation.gametechwiki.com/index.php/ROM/ISO_Sites", "desc": "Wiki with extensive links to ROM and ISO dumps."},
-        {"name": "DarkUmbra", "url": "https://darkumbra.net", "desc": "ROM and game hacking community."},
-        {"name": "nicoblog", "url": "https://nicoblog.org", "desc": "ROM downloads for various platforms."}
-      ]
-    },
-    {
-      "cat": "Movies & Series",
-      "badge": "movies",
-      "items": [
-        {"name": "FMovies", "url": "https://www3.fmovies.to/", "desc": "Stream movies and TV series online. Use adblocker."},
-        {"name": "SolarMovie", "url": "https://solarmoviez.ru/", "desc": "Movie and series streaming site."},
-        {"name": "YesMovies", "url": "https://yesmovies.to/", "desc": "Free streaming of movies and TV shows."},
-        {"name": "StreamCR", "url": "https://scr.cr/", "desc": "Movie streaming site."},
-        {"name": "Awesome Piracy Streaming List", "url": "https://github.com/Igglybuff/awesome-piracy/blob/master/readme.md#streaming-sites", "desc": "Curated GitHub list of streaming sites categorized by quality."},
-        {"name": "FREEMEDIAFUCKYEAH streaming list", "url": "https://old.reddit.com/r/FREEMEDIAFUCKYEAH/comments/9q11kg/how_to_stream_movies_tv_anime_sports_online/", "desc": "Large collection of streaming sites for movies, TV, anime, and sports."}
-      ]
-    },
-    {
-      "cat": "Anime",
-      "badge": "anime",
-      "items": [
-        {"name": "Nyaa.si", "url": "https://nyaa.si/", "desc": "The go-to torrent tracker for anime, manga, and Japanese media."},
-        {"name": "9anime", "url": "https://9anime.to/", "desc": "Popular anime streaming site."},
-        {"name": "GoGoAnime", "url": "https://www5.gogoanime.in/", "desc": "Wide selection of anime streaming."},
-        {"name": "KissAnime", "url": "https://kissanime.ru/", "desc": "Classic anime streaming site."},
-        {"name": "AnimeKaizoku", "url": "https://animekaizoku.com/", "desc": "Anime downloads in various qualities."},
-        {"name": "r/animepiracy wiki", "url": "https://old.reddit.com/r/animepiracy/wiki/index", "desc": "Exhaustive wiki of anime streaming, manga, and light novel sites."}
-      ]
-    },
-    {
-      "cat": "Music",
-      "badge": "music",
-      "items": [
-        {"name": "Rutracker (music)", "url": "http://rutracker.org/forum/index.php", "desc": "Extensive music catalog including rare and lossless releases."},
-        {"name": "Redacted.ch", "url": "https://redacted.ch/", "desc": "Private music tracker with high quality audio. Interview required to join."},
-        {"name": "Soulseek", "url": "http://www.slsknet.org/news/node/1", "desc": "P2P network dedicated to music sharing. Great for rare and obscure tracks."},
-        {"name": "yt-dlp / youtube-dl", "url": "https://github.com/rg3/youtube-dl", "desc": "Command-line tool to download video and audio from YouTube and many other sites."},
-        {"name": "youtube-dl-gui", "url": "https://github.com/MrS0m30n3/youtube-dl-gui", "desc": "GUI wrapper for youtube-dl — no command line needed."},
-        {"name": "interviewfor.red", "url": "https://interviewfor.red/en/index.html", "desc": "Take an interview to gain access to Redacted.ch music tracker."}
-      ]
-    },
-    {
-      "cat": "Android",
-      "badge": "android",
-      "items": [
-        {"name": "Mobilism (APKs)", "url": "https://forum.mobilism.org/viewforum.php?f=398", "desc": "Largest forum for pirated Android apps, games, and ebooks."},
-        {"name": "APKMirror", "url": "https://www.apkmirror.com/", "desc": "Untouched and signed APKs. Useful for older app versions. Safe."},
-        {"name": "APKPure", "url": "https://apkpure.com/", "desc": "APK download site similar to APKMirror."},
-        {"name": "Flud", "url": "https://play.google.com/store/apps/details?id=com.delphicoder.flud&hl=en", "desc": "Popular Android torrent client, free with ads."},
-        {"name": "Libretorrent", "url": "https://f-droid.org/en/packages/org.proninyaroslav.libretorrent/", "desc": "Ad-free open-source torrent client for Android. Similar UI to Flud."},
-        {"name": "BiglyBT (Android)", "url": "https://f-droid.org/packages/com.biglybt.android.client/", "desc": "No-nonsense, ad-free, open-source torrent client for Android."},
-        {"name": "ACMarket", "url": "https://acmarket.net/", "desc": "Cracked Play Store alternative for apps and games."},
-        {"name": "onhax.me", "url": "https://onhax.me/", "desc": "Modded and cracked Android apps. Use adblocker."}
-      ]
-    },
-    {
-      "cat": "Tools & Activation",
-      "badge": "tools",
-      "items": [
-        {"name": "Microsoft Windows & Office ISO Tool", "url": "https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool", "desc": "Pulls Windows and Office ISOs directly from Microsoft. Untouched and safe."},
-        {"name": "MegaDownloader", "url": "https://www.reddit.com/r/Piracy/wiki/index#wiki_misc_tools", "desc": "Batch download Mega links, bypass bandwidth limits with VPN."},
-        {"name": "EZBlocker (Spotify)", "url": "https://www.ericzhang.me/projects/spotify-ad-blocker-ezblocker/", "desc": "Lightweight .exe that blocks and mutes Spotify ads on Windows."},
-        {"name": "rg-adguard (MS ISOs)", "url": "https://tb.rg-adguard.net/index.php", "desc": "Web interface for Microsoft's TechBench. Windows 8.1+, Office 2013+."},
-        {"name": "The Eye MSDN Dump", "url": "https://the-eye.eu/public/MSDN/", "desc": "2.7TB backup of MSDN dump. Has hard to find Windows ISOs."}
+        {
+          "name": "freetutorials.us",
+          "url": "https://www.freetutorials.us/",
+          "desc": "Udemy, Lynda, Pluralsight courses available via torrents."
+        },
+        {
+          "name": "gfxdomain.net",
+          "url": "http://forum.gfxdomain.net/forums/others-tutorials.42/",
+          "desc": "computer graphics design tutorials/courses via fileshosters (some through torrents)."
+        },
+        {
+          "name": "git.ir",
+          "url": "https://git.ir/",
+          "desc": "hosts many courses/tutorials from udemy, tutsplus, lynda, etc... Available through direct download links."
+        }
       ]
     },
     {
       "cat": "Direct Downloads",
       "badge": "ddl",
       "items": [
-        {"name": "rlsbb.ru", "url": "http://rlsbb.ru", "desc": "General releases, usually hosted on premium file hosts."},
-        {"name": "adit-hd", "url": "http://adit-hd.com", "desc": "Films and series direct downloads."},
-        {"name": "warez-bb.org", "url": "http://warez-bb.org", "desc": "General warez forum and download site."}
+        {
+          "name": "fitgirl-repacks.site",
+          "url": "http://fitgirl-repacks.site/",
+          "desc": "compressed game repacks with long installation times."
+        },
+        {
+          "name": "Steam Underground - cs.rin.ru",
+          "url": "https://cs.rin.ru/forum/viewforum.php?f=10",
+          "desc": "dedicated game piracy forum."
+        }
+      ]
+    },
+    {
+      "cat": "Torrent sites",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "gamestorrents.io",
+          "url": "https://www.gamestorrents.io/",
+          "desc": ""
+        },
+        {
+          "name": "rutor.info",
+          "url": "http://rutor.info/games",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "cat": "Games",
+      "badge": "games",
+      "items": [
+        {
+          "name": "the-eye.eu",
+          "url": "http://the-eye.eu/public/rom/",
+          "desc": "large collection of multi-platform console roms"
+        },
+        {
+          "name": "romulation.net",
+          "url": "https://www.romulation.net/",
+          "desc": ""
+        },
+        {
+          "name": "emuparadise.me",
+          "url": "https://www.emuparadise.me",
+          "desc": "(NDS ROMS, PSP ROMS, PSX ROMS, NES ROMS, SNES ROMS, MAME, WII ROMS, etc...)"
+        },
+        {
+          "name": "emulation.gametechwiki.com",
+          "url": "http://emulation.gametechwiki.com/index.php/ROM/ISO_Sites",
+          "desc": "large wiki with several links to ROM/ISO dumps."
+        },
+        {
+          "name": "Vimm's Lair",
+          "url": "https://vimm.net/?p=vault",
+          "desc": "large collection of ROMs"
+        },
+        {
+          "name": "DarkUmbra",
+          "url": "https://darkumbra.net",
+          "desc": ""
+        },
+        {
+          "name": "nicoblog.org",
+          "url": "https://nicoblog.org",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "cat": "Movies & Series",
+      "badge": "movies",
+      "items": [
+        {
+          "name": "StreamCR",
+          "url": "https://scr.cr/",
+          "desc": ""
+        },
+        {
+          "name": "fmovies.to",
+          "url": "https://www3.fmovies.to/",
+          "desc": ""
+        },
+        {
+          "name": "solarmoviez.ru",
+          "url": "https://solarmoviez.ru/",
+          "desc": ""
+        },
+        {
+          "name": "yesmovies.to",
+          "url": "https://yesmovies.to/",
+          "desc": ""
+        },
+        {
+          "name": "Awesome Piracy - curated list of streaming sites",
+          "url": "https://github.com/Igglybuff/awesome-piracy/blob/master/readme.md#streaming-sites",
+          "desc": "Reddit thread here."
+        },
+        {
+          "name": "How to Stream, Movies, TV, Anime & Sports",
+          "url": "https://old.reddit.com/r/FREEMEDIAFUCKYEAH/comments/9q11kg/how_to_stream_movies_tv_anime_sports_online/",
+          "desc": "large collection of streaming sites categorized by speed and quality."
+        }
+      ]
+    },
+    {
+      "cat": "Anime",
+      "badge": "anime",
+      "items": [
+        {
+          "name": "animekaizoku.com",
+          "url": "https://animekaizoku.com/",
+          "desc": ""
+        },
+        {
+          "name": "masterani.me",
+          "url": "https://www.masterani.me/",
+          "desc": ""
+        },
+        {
+          "name": "gogoanime.in",
+          "url": "https://www5.gogoanime.in/",
+          "desc": ""
+        },
+        {
+          "name": "9anime.to",
+          "url": "https://9anime.to/",
+          "desc": ""
+        },
+        {
+          "name": "kissanime.ru",
+          "url": "https://kissanime.ru/",
+          "desc": ""
+        },
+        {
+          "name": "Nyaa.si",
+          "url": "https://nyaa.si/",
+          "desc": ""
+        },
+        {
+          "name": "nyaa.pantsu.cat",
+          "url": "https://nyaa.pantsu.cat/",
+          "desc": ""
+        },
+        {
+          "name": "**r/KissCartoon's extensive anime/manga site wiki**",
+          "url": "https://www.reddit.com/r/KissCartoon/wiki/alternatives",
+          "desc": ""
+        },
+        {
+          "name": "**r/animepiracy's exhaustive wiki filled with anime streaming, manga, and light novel sites**",
+          "url": "https://old.reddit.com/r/animepiracy/wiki/index",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "cat": "Music",
+      "badge": "music",
+      "items": [
+        {
+          "name": "updated fork with FLAC support can be found here.",
+          "url": "https://www.reddit.com/r/Piracy/comments/7r3re1/announcement_deezloader_reborn_302_is_out/",
+          "desc": ""
+        },
+        {
+          "name": "rutracker.org",
+          "url": "http://rutracker.org/forum/index.php",
+          "desc": "Russian tracker with an extensive music catalog."
+        },
+        {
+          "name": "Redacted.ch",
+          "url": "https://redacted.ch/",
+          "desc": "private music tracker. Visit interviewfor.red to join."
+        },
+        {
+          "name": "Soulseek",
+          "url": "http://www.slsknet.org/news/node/1",
+          "desc": "P2P network used for music."
+        },
+        {
+          "name": "Youtube-dl",
+          "url": "https://github.com/rg3/youtube-dl",
+          "desc": "command-line program to download video/audio from Youtube videos and other sites."
+        },
+        {
+          "name": "Youtube-dl-gui",
+          "url": "https://github.com/MrS0m30n3/youtube-dl-gui",
+          "desc": "GUI for youtube-dl for those not proficient in using the command line."
+        }
+      ]
+    },
+    {
+      "cat": "Torrent Clients",
+      "badge": "torrent",
+      "items": [
+        {
+          "name": "Flud",
+          "url": "https://play.google.com/store/apps/details?id=com.delphicoder.flud&hl=en",
+          "desc": "free ad-supported client."
+        },
+        {
+          "name": "Libretorrent",
+          "url": "https://f-droid.org/en/packages/org.proninyaroslav.libretorrent/",
+          "desc": "ad-free open source client. Similar UI to Flud."
+        },
+        {
+          "name": "BiglyBT",
+          "url": "https://f-droid.org/packages/com.biglybt.android.client/",
+          "desc": "no nonsense, ad-free, open source client."
+        }
+      ]
+    },
+    {
+      "cat": "Android",
+      "badge": "android",
+      "items": [
+        {
+          "name": "Mobilism.org",
+          "url": "https://forum.mobilism.org/viewforum.php?f=398",
+          "desc": "largest forum for pirated apps, games, ebooks, etc..."
+        },
+        {
+          "name": "onhax.me",
+          "url": "https://onhax.me/",
+          "desc": "similar content to mobilism. Use an adblocker when browsing."
+        },
+        {
+          "name": "apkmirror.com",
+          "url": "https://www.apkmirror.com/",
+          "desc": "contains untouched and signed release apks. Useful if searching for a prior version of an application."
+        },
+        {
+          "name": "apkpure.com",
+          "url": "https://apkpure.com/",
+          "desc": "similar to apkmirror.com"
+        }
+      ]
+    },
+    {
+      "cat": "Apps",
+      "badge": "misc",
+      "items": [
+        {
+          "name": "Terrarium TV",
+          "url": "https://www.apkmirror.com/apk/terrarium-tv/terrarium-tv/terrarium-tv-1-9-2-release/terrarium-tv-1-9-2-android-apk-download/",
+          "desc": "movie/series streaming app. \"Premium ad-free\" versions can be found in mobilism.org"
+        },
+        {
+          "name": "Mobdro",
+          "url": "https://www.mobdro.to/index",
+          "desc": "live streams aggregator (Sports, TV, etc...)"
+        },
+        {
+          "name": "Fildo",
+          "url": "https://fildo.net/android/en/",
+          "desc": "music streaming and download."
+        },
+        {
+          "name": "Mobilism for Android",
+          "url": "https://forum.mobilism.org/viewtopic.php?t=214777",
+          "desc": "mobilism in an app (apps/games)"
+        },
+        {
+          "name": "ACMarket",
+          "url": "https://acmarket.net/",
+          "desc": "\"cracked play store.\" (apps/games)"
+        }
+      ]
+    },
+    {
+      "cat": "Direct Downloads",
+      "badge": "ddl",
+      "items": [
+        {
+          "name": "http://adit-hd.com",
+          "url": "http://adit-hd.com",
+          "desc": "(films/series)"
+        },
+        {
+          "name": "http://rlsbb.ru",
+          "url": "http://rlsbb.ru",
+          "desc": "general releases (usually hosted on premium filehosters)"
+        }
       ]
     },
     {
       "cat": "Miscellaneous",
       "badge": "misc",
       "items": [
-        {"name": "Squawkr.io", "url": "https://www.squawkr.io/", "desc": "Get notified when a movie is released. Set parameters like resolution."},
-        {"name": "predb.me", "url": "http://predb.me/", "desc": "Live stream of searchable scene releases."},
-        {"name": "Subscene", "url": "https://subscene.com/", "desc": "Multilingual subtitles for movies and TV series."},
-        {"name": "Addic7ed", "url": "http://www.addic7ed.com/", "desc": "Multilingual subtitles for movies and TV series."},
-        {"name": "Free Premium Leechers", "url": "https://filehostings.miraheze.org", "desc": "Maintained list of free premium link leechers."},
-        {"name": "Hampshire College free ebooks", "url": "https://www.hampshire.edu/library/links-to-free-ebook-resources", "desc": "Several links to legitimately free ebook resources."}
+        {
+          "name": "Microsoft Windows and Office ISO Download Tool",
+          "url": "https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool",
+          "desc": "lightweight program that pulls Windows and Office isos directly from Microsoft's techbench site. All .isos are untouched and safe."
+        },
+        {
+          "name": "MegaDownloader",
+          "url": "https://www.reddit.com/r/Piracy/wiki/index#wiki_misc_tools",
+          "desc": "Batch download Mega links like IDM or jDownloader. Bypass Mega bandwidth limit completely given you have a VPN or are able to switch IP addresses on the fly."
+        },
+        {
+          "name": "EZBlocker – Spotify Ad Blocker",
+          "url": "https://www.ericzhang.me/projects/spotify-ad-blocker-ezblocker/",
+          "desc": "lightweight .exe that blocks and mutes Spotify ads on Windows."
+        },
+        {
+          "name": "Squawkr.io",
+          "url": "https://www.squawkr.io/",
+          "desc": "Get notified when a movie releases. You can also set parameters such resolution."
+        },
+        {
+          "name": "predb.me",
+          "url": "http://predb.me/",
+          "desc": "livestream of searchable releases."
+        },
+        {
+          "name": "subscene.com",
+          "url": "https://subscene.com/",
+          "desc": "multinlingual subtitles for movies/series"
+        },
+        {
+          "name": "addic7ed.com",
+          "url": "http://www.addic7ed.com/",
+          "desc": "multinlingual subtitles for movies/series"
+        },
+        {
+          "name": "Free Premium Leechers List",
+          "url": "https://filehostlist.miraheze.org",
+          "desc": "maintained by u/H1dd3nM1nd"
+        },
+        {
+          "name": "emuparadise.me",
+          "url": "https://www.emuparadise.me/",
+          "desc": "NDS ROMS, PSP ROMS, PSX ROMS, NES ROMS, SNES ROMS, MAME WII ROMS, etc..."
+        },
+        {
+          "name": "Vimm's Lair",
+          "url": "https://vimm.net/?p=vault",
+          "desc": "large collection of ROMs"
+        }
       ]
     }
   ]
